@@ -1,0 +1,118 @@
+.dai{
+    width: 400px;
+    background-color: black;
+    opacity: 0.4;
+    margin: 30px auto;
+    border: 1px solid white;
+}
+.dai_box{
+    width: 300px;
+    margin: 50px auto;
+    
+}
+.dai_box h1{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.dai_box .font{
+    margin-bottom: 10px;
+    color: white;
+
+}
+.dai_box .font span:first-child{
+    color: white;
+    float: left;
+}
+.dai_box .font span:first-child{
+    color: white;
+    float: right;
+}
+.btn span{
+    text-align: center;
+    line-height: 30px;
+}
+.money{
+    position:relative;
+   
+}
+.money input{
+    float: left;
+    width: 220px ;
+    height: 50px;
+    border: none;
+    background-color: white;
+
+}
+.money input::-webkit-input-placeholder{
+    color: black;
+}
+.money_m{
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    z-index: 1;
+    color: black;
+}
+.middle{
+    position: absolute;
+    right: 85px;
+    top: 16px;
+}
+.money div{
+    float: right;
+    width: 79px;height: 50px;
+    border-left: 1px solid #E7E7E7;
+    background-color:#FFFFFF;
+}
+
+.secect{
+    width: 300px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 50px;
+    z-index: 9999;
+}
+li:hover{
+    background-color: #4c4c4c;
+}
+.btn1 span{
+    position:absolute;
+    right: 33px;
+    top: 20px;
+}
+.btn1 .span2{
+    display: none;
+}
+.secect{
+    width: 300px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: 9999;
+}
+.btn1 span{
+    position:absolute;
+    right: 33px;
+    top: 20px;
+}
+.btn1 .span2{
+    display: none;
+}
+.sercour{
+    width: 300px;
+    height: 50px;
+    background-color: dodgerblue;
+    line-height: 50px;
+    text-align: center;
+    /*z-index: 11;*/
+    margin: 10px auto;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+#s1{
+	font-size: 14px;
+}

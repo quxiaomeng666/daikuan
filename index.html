@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>好贷</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="dai">
+
+        <div class="dai_box clearfix">
+            <h1>快速搜素消费贷款</h1>
+            <p class="font">
+                <span>不足一万可用小数表示 </span>
+                <span>贷款金额：</span>
+            </p>
+           <div id="mon_1" class="money clearfix">
+               <input type="text">
+               <p class="money_m">
+                   30
+               </p>
+               <p class="middle">
+                  		 万元
+               </p>
+               <div class="btn1">
+                       <span class="glyphicon glyphicon-chevron-down span1"></span>
+                       <span class="glyphicon glyphicon-chevron-up span2"></span>
+               </div>
+
+               <ul class="secect">
+                   <li><span>5</span>万元</li>
+                   <li><span>10</span>万元</li>
+                   <li><span>15</span>万元</li>
+                   <li><span>20</span>万元</li>
+                   <li><span>25</span>万元</li>
+                   <li><span>30</span>万元</li>
+               </ul>
+           </div>
+
+            <p class="font">
+                <span></span>
+                <span id="s1">贷款期限：</span>
+            </p>
+            <div id="mon_2" class="money clearfix">
+                <input type="text">
+                <p class="money_m">
+                    1
+                </p>
+                <p class="middle">
+                    年
+                </p>
+                <div class="btn1">
+                    <span class="glyphicon glyphicon-chevron-down span1"></span>
+                    <span class="glyphicon glyphicon-chevron-up span2"></span>
+                </div>
+
+                <ul class="secect">
+                    <li><span>6</span>个月</li>
+                    <li><span>1</span>年</li>
+                    <li><span>18</span>个月</li>
+                    <li><span>2</span>年</li>
+                    <li><span>3</span>年</li>
+                    <li><span>5</span>年</li>
+                     <li><span>10</span>年</li>
+                </ul>
+            </div>
+
+
+           <input type= "button"  value="搜索一下" class="sercour"/>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function () {
+
+        event("#mon_1")
+        event("#mon_2")
+
+        function event(id) {
+            $(id+" .btn1").click(function () {
+                $(id+" .secect").slideDown();
+                $(id+" .span1").css("display","none");
+                $(id+" .span2").css("display","block");
+            });
+            var ali=$(id+" .secect li");
+            ali.click(function () {
+                $(id+" .money_m").html(parseInt($(this).children("span").html()));
+                $(id+" .secect").hide();
+                $(id+" .span2").css("display","none");
+                $(id+" .span1").css("display","block");
+            })
+        }
+
+  })
+</script>
